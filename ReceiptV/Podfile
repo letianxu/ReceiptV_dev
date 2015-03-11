@@ -1,0 +1,5 @@
+workspace '../ReceiptV'
+platform :ios, '7.0'
+
+pod 'MSDynamicsDrawerViewController', :path => '../Libraries/'
+
