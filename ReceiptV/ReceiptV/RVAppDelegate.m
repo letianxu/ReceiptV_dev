@@ -37,7 +37,7 @@
     [self.dynamicsDrawerViewController setDrawerViewController:menuViewController forDirection:MSDynamicsDrawerDirectionLeft];
     
     // Transition to the first view controller
-    [menuViewController transitionToViewController:RVPaneViewControllerTypeStore];
+    [menuViewController transitionToViewController:RVPaneViewControllerTypeGoShopping];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.dynamicsDrawerViewController;

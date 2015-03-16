@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Dynamics Drawer View Controller-->
@@ -22,10 +22,27 @@
             </objects>
             <point key="canvasLocation" x="381" y="372"/>
         </scene>
+        <!--Shopping View Controller-->
+        <scene sceneID="Dzq-Re-N8b">
+            <objects>
+                <viewController storyboardIdentifier="Go Shopping" id="dba-rk-OFb" customClass="RVShoppingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ha2-sn-pzN"/>
+                        <viewControllerLayoutGuide type="bottom" id="CIQ-o9-UFg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XqF-UD-FkV" customClass="MKMapView">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10G-GR-FtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="372"/>
+        </scene>
         <!--Store Table View Controller-->
         <scene sceneID="Jkz-Ew-vzz">
             <objects>
-                <tableViewController storyboardIdentifier="Shop Store" id="BK8-RV-2vc" customClass="RVStoreTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="My Store List" id="BK8-RV-2vc" customClass="RVStoreTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="n2e-wg-Kgb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uG5-B7-Tx7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1075.5" y="1067.25"/>
+            <point key="canvasLocation" x="1804.5" y="1067.25"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="2NS-Ly-aec">
@@ -57,6 +74,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQp-yZ-E5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="381" y="1067.25"/>
+        </scene>
+        <!--Shopping List Table View Controller-->
+        <scene sceneID="mIa-bl-rxD">
+            <objects>
+                <tableViewController storyboardIdentifier="My Shopping List" id="LHE-xr-VU3" customClass="RVShoppingListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="F7r-uN-445">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="LHE-xr-VU3" id="egr-KB-WJh"/>
+                            <outlet property="delegate" destination="LHE-xr-VU3" id="X5g-Xv-bYU"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kuX-9y-lR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087.5" y="1067.25"/>
         </scene>
     </scenes>
 </document>

@@ -36,7 +36,7 @@ NSString * const RVMenuCellReuseIdentifier = @"Drawer Cell";
 NSString * const RVDrawerHeaderReuseIdentifier = @"Drawer Header";
 
 typedef NS_ENUM(NSUInteger, RVMenuViewControllerTableViewSectionType) {
-    RVMenuViewControllerTableViewSectionTypeOptions,
+    RVMenuViewControllerTableViewSectionTypeStoreOptions,
     RVMenuViewControllerTableViewSectionTypeHelp,
     RVMenuViewControllerTableViewSectionTypeCount
 };
@@ -103,21 +103,27 @@ typedef NS_ENUM(NSUInteger, RVMenuViewControllerTableViewSectionType) {
 {
     self.paneViewControllerType = NSUIntegerMax;
     self.paneViewControllerTitles = @{
-        @(RVPaneViewControllerTypeStore) : @"Shop Store",
+        @(RVPaneViewControllerTypeGoShopping) : @"Go Shopping",
+        @(RVPaneViewControllerTypeMyShoppingList) : @"My Shopping List",
+        @(RVPaneViewControllerTypeMyStoreList) : @"My Store List",
+        @(RVPaneViewControllerTypeTips) : @"Tips",
         @(RVPaneViewControllerTypeContactUs) : @"Contact Us"
     };
     
     self.paneViewControllerIdentifiers = @{
-        @(RVPaneViewControllerTypeStore) : @"Shop Store",
+        @(RVPaneViewControllerTypeGoShopping) : @"Go Shopping",
+        @(RVPaneViewControllerTypeMyShoppingList) : @"My Shopping List",
+        @(RVPaneViewControllerTypeMyStoreList) : @"My Store List",
+        @(RVPaneViewControllerTypeTips) : @"Tips",
         @(RVPaneViewControllerTypeContactUs) : @"Contact Us"
     };
     self.sectionTitles = @{
-        @(RVMenuViewControllerTableViewSectionTypeOptions) : @"Options",
+        @(RVMenuViewControllerTableViewSectionTypeStoreOptions) : @"Store name: ", //[LXU] dynamic update with store name
         @(RVMenuViewControllerTableViewSectionTypeHelp) : @"Help",
     };
     
     self.tableViewSectionBreaks = @[
-        @(RVPaneViewControllerTypeContactUs),
+        @(RVPaneViewControllerTypeTips),
         @(RVPaneViewControllerTypeCount)
     ];
 }

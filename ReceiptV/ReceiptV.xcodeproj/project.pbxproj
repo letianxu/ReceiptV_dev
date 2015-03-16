@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9BCDA831AB525F00022231D /* RVShoppingListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */; };
+		B9BCDA8B1AB678AE0022231D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BCDA8A1AB678AE0022231D /* libPods.a */; };
+		B9BCDA8E1AB67B550022231D /* RVShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */; };
 		B9D3AC491AAE22F60094A70A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC481AAE22F60094A70A /* main.m */; };
 		B9D3AC4C1AAE22F60094A70A /* RVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC4B1AAE22F60094A70A /* RVAppDelegate.m */; };
 		B9D3AC4F1AAE22F60094A70A /* ReceiptV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC4D1AAE22F60094A70A /* ReceiptV.xcdatamodeld */; };
 		B9D3AC571AAE22F60094A70A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D3AC561AAE22F60094A70A /* Images.xcassets */; };
 		B9D3AC661AAE22F60094A70A /* ReceiptVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC651AAE22F60094A70A /* ReceiptVTests.m */; };
-		B9D3AC821AAE26940094A70A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D3AC811AAE26940094A70A /* libPods.a */; };
 		B9D3AC8C1AAE398E0094A70A /* RVMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC8B1AAE398E0094A70A /* RVMenuViewController.m */; };
 		B9D3AC911AAE3BF60094A70A /* RVMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC8E1AAE3BF60094A70A /* RVMenuCell.m */; };
 		B9D3AC921AAE3BF60094A70A /* RVMenuTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC901AAE3BF60094A70A /* RVMenuTableViewHeader.m */; };
@@ -34,6 +36,11 @@
 /* Begin PBXFileReference section */
 		1AFA6BF37D9C78C0773BE999 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		29D5F5C1ECEF70C6CBF670CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B9BCDA811AB525F00022231D /* RVShoppingListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVShoppingListTableViewController.h; sourceTree = "<group>"; };
+		B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVShoppingListTableViewController.m; sourceTree = "<group>"; };
+		B9BCDA8A1AB678AE0022231D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		B9BCDA8C1AB67B550022231D /* RVShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVShoppingViewController.h; sourceTree = "<group>"; };
+		B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVShoppingViewController.m; sourceTree = "<group>"; };
 		B9D3AC431AAE22F50094A70A /* ReceiptV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D3AC471AAE22F60094A70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9D3AC481AAE22F60094A70A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,7 +52,6 @@
 		B9D3AC5F1AAE22F60094A70A /* ReceiptVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D3AC641AAE22F60094A70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9D3AC651AAE22F60094A70A /* ReceiptVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceiptVTests.m; sourceTree = "<group>"; };
-		B9D3AC811AAE26940094A70A /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		B9D3AC871AAE2B080094A70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ReceiptV_Main.storyboard; sourceTree = "<group>"; };
 		B9D3AC8A1AAE398E0094A70A /* RVMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMenuViewController.h; sourceTree = "<group>"; };
 		B9D3AC8B1AAE398E0094A70A /* RVMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMenuViewController.m; sourceTree = "<group>"; };
@@ -62,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D3AC821AAE26940094A70A /* libPods.a in Frameworks */,
+				B9BCDA8B1AB678AE0022231D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +85,7 @@
 		17ACEC5E7534B99D2E33F081 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9D3AC811AAE26940094A70A /* libPods.a */,
+				B9BCDA8A1AB678AE0022231D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +122,10 @@
 		B9D3AC451AAE22F50094A70A /* ReceiptV */ = {
 			isa = PBXGroup;
 			children = (
+				B9BCDA8C1AB67B550022231D /* RVShoppingViewController.h */,
+				B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */,
+				B9BCDA811AB525F00022231D /* RVShoppingListTableViewController.h */,
+				B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */,
 				B9D3AC931AAE82EF0094A70A /* RVStoreTableViewController.h */,
 				B9D3AC941AAE82EF0094A70A /* RVStoreTableViewController.m */,
 				B9D3AC8D1AAE3BF60094A70A /* RVMenuCell.h */,
@@ -297,12 +307,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D3AC8C1AAE398E0094A70A /* RVMenuViewController.m in Sources */,
+				B9BCDA831AB525F00022231D /* RVShoppingListTableViewController.m in Sources */,
 				B9D3AC4C1AAE22F60094A70A /* RVAppDelegate.m in Sources */,
 				B9D3AC911AAE3BF60094A70A /* RVMenuCell.m in Sources */,
 				B9D3AC4F1AAE22F60094A70A /* ReceiptV.xcdatamodeld in Sources */,
 				B9D3AC921AAE3BF60094A70A /* RVMenuTableViewHeader.m in Sources */,
 				B9D3AC491AAE22F60094A70A /* main.m in Sources */,
 				B9D3AC951AAE82EF0094A70A /* RVStoreTableViewController.m in Sources */,
+				B9BCDA8E1AB67B550022231D /* RVShoppingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +442,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphonesimulator",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -445,6 +458,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphonesimulator",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

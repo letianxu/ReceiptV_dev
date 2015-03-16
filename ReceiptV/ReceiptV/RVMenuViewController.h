@@ -30,7 +30,11 @@
 #import "MSDynamicsDrawerViewController.h"
 
 typedef NS_ENUM(NSUInteger, RVPaneViewControllerType) {
-    RVPaneViewControllerTypeStore,
+    RVPaneViewControllerTypeGoShopping,
+    RVPaneViewControllerTypeMyShoppingList,
+    RVPaneViewControllerTypeMyReceiptList,
+    RVPaneViewControllerTypeMyStoreList,
+    RVPaneViewControllerTypeTips,
     RVPaneViewControllerTypeContactUs,
     RVPaneViewControllerTypeCount
 };

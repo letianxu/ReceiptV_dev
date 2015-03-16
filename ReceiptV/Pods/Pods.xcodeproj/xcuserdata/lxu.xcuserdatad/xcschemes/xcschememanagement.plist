@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-HMSegmentedControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MSDynamicsDrawerViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>188DFC6E6A49BCE69606639C</key>
+		<key>52875CA34AFEEFB1BFA1B853</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81ACB0C8D3B72BE91C6182D1</key>
+		<key>5829A93024D21500AD3E1A5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7002EC739A4A1281560E80D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

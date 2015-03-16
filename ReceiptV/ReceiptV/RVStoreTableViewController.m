@@ -28,7 +28,7 @@
 
 #import "RVStoreTableViewController.h"
 
-NSString * const RVStoreCellReuseIdentifier = @"Shop Store";
+NSString * const RVStoreCellReuseIdentifier = @"My Store List";
 
 @implementation RVStoreTableViewController
 

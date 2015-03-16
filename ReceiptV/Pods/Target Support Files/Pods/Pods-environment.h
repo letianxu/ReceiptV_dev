@@ -6,6 +6,12 @@
 // project.
 
 
+// HMSegmentedControl
+#define COCOAPODS_POD_AVAILABLE_HMSegmentedControl
+#define COCOAPODS_VERSION_MAJOR_HMSegmentedControl 1
+#define COCOAPODS_VERSION_MINOR_HMSegmentedControl 5
+#define COCOAPODS_VERSION_PATCH_HMSegmentedControl 0
+
 // MSDynamicsDrawerViewController
 #define COCOAPODS_POD_AVAILABLE_MSDynamicsDrawerViewController
 #define COCOAPODS_VERSION_MAJOR_MSDynamicsDrawerViewController 1

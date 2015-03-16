@@ -1,14 +1,19 @@
 PODS:
+  - HMSegmentedControl (1.5)
   - MSDynamicsDrawerViewController (1.5.1)
 
 DEPENDENCIES:
+  - HMSegmentedControl (from `../Libraries/`)
   - MSDynamicsDrawerViewController (from `../Libraries/`)
 
 EXTERNAL SOURCES:
+  HMSegmentedControl:
+    :path: ../Libraries/
   MSDynamicsDrawerViewController:
     :path: ../Libraries/
 
 SPEC CHECKSUMS:
+  HMSegmentedControl: a178da1976eaa623a990edf1be7bdab8025fe234
   MSDynamicsDrawerViewController: 2409ca61449d8541a3ee640bfd2d230c3734d3c4
 
 COCOAPODS: 0.35.0
