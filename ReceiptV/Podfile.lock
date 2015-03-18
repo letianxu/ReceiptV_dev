@@ -1,8 +1,14 @@
 PODS:
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
   - HMSegmentedControl (1.5)
   - MSDynamicsDrawerViewController (1.5.1)
 
 DEPENDENCIES:
+  - FMDB
   - HMSegmentedControl (from `../Libraries/`)
   - MSDynamicsDrawerViewController (from `../Libraries/`)
 
@@ -13,7 +19,8 @@ EXTERNAL SOURCES:
     :path: ../Libraries/
 
 SPEC CHECKSUMS:
-  HMSegmentedControl: a178da1976eaa623a990edf1be7bdab8025fe234
-  MSDynamicsDrawerViewController: 2409ca61449d8541a3ee640bfd2d230c3734d3c4
+  FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
+  HMSegmentedControl: 23b6155cd3670f73ffc6eb836af1cfc440e81780
+  MSDynamicsDrawerViewController: 2874df90f5e9453dc7d4e32f8038b50615d4baa7
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.0

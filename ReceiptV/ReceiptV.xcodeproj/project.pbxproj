@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B27B6D711ABA022B00B2DC62 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B6D701ABA022B00B2DC62 /* libPods.a */; };
 		B90046821AB7BB4200B4B765 /* 1-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046721AB7BB4200B4B765 /* 1-selected.png */; };
 		B90046831AB7BB4200B4B765 /* 1-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046731AB7BB4200B4B765 /* 1-selected@2x.png */; };
 		B90046841AB7BB4200B4B765 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046741AB7BB4200B4B765 /* 1.png */; };
@@ -25,7 +26,6 @@
 		B995199C1AB9127A00698170 /* frame02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519991AB9127A00698170 /* frame02@2x.png */; };
 		B995199E1AB917A700698170 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995199D1AB917A700698170 /* MapKit.framework */; };
 		B9BCDA831AB525F00022231D /* RVShoppingListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */; };
-		B9BCDA8B1AB678AE0022231D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BCDA8A1AB678AE0022231D /* libPods.a */; };
 		B9BCDA8E1AB67B550022231D /* RVShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */; };
 		B9D3AC491AAE22F60094A70A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC481AAE22F60094A70A /* main.m */; };
 		B9D3AC4C1AAE22F60094A70A /* RVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC4B1AAE22F60094A70A /* RVAppDelegate.m */; };
@@ -53,6 +53,7 @@
 /* Begin PBXFileReference section */
 		1AFA6BF37D9C78C0773BE999 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		29D5F5C1ECEF70C6CBF670CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B27B6D701ABA022B00B2DC62 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		B90046721AB7BB4200B4B765 /* 1-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-selected.png"; path = "Images.xcassets/1-selected.png"; sourceTree = "<group>"; };
 		B90046731AB7BB4200B4B765 /* 1-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-selected@2x.png"; path = "Images.xcassets/1-selected@2x.png"; sourceTree = "<group>"; };
 		B90046741AB7BB4200B4B765 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Images.xcassets/1.png; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		B995199D1AB917A700698170 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B9BCDA811AB525F00022231D /* RVShoppingListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVShoppingListTableViewController.h; sourceTree = "<group>"; };
 		B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVShoppingListTableViewController.m; sourceTree = "<group>"; };
-		B9BCDA8A1AB678AE0022231D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		B9BCDA8C1AB67B550022231D /* RVShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVShoppingViewController.h; sourceTree = "<group>"; };
 		B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVShoppingViewController.m; sourceTree = "<group>"; };
 		B9D3AC431AAE22F50094A70A /* ReceiptV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,8 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27B6D711ABA022B00B2DC62 /* libPods.a in Frameworks */,
 				B995199E1AB917A700698170 /* MapKit.framework in Frameworks */,
-				B9BCDA8B1AB678AE0022231D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +121,8 @@
 		17ACEC5E7534B99D2E33F081 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B27B6D701ABA022B00B2DC62 /* libPods.a */,
 				B995199D1AB917A700698170 /* MapKit.framework */,
-				B9BCDA8A1AB678AE0022231D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -507,12 +507,14 @@
 			baseConfigurationReference = 29D5F5C1ECEF70C6CBF670CF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iOS Development: letian xu (7HUXL5D28Q)";
 				INFOPLIST_FILE = ReceiptV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -523,12 +525,14 @@
 			baseConfigurationReference = 1AFA6BF37D9C78C0773BE999 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iOS Development: letian xu (7HUXL5D28Q)";
 				INFOPLIST_FILE = ReceiptV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
