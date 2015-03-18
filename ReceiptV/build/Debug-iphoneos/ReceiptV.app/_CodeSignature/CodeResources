@@ -4,15 +4,63 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>1-selected.png</key>
+		<data>
+		8XkGWupzhAM+iCy7nroEu9hvfDQ=
+		</data>
+		<key>1-selected@2x.png</key>
+		<data>
+		d38pCc1Mqy5Ie7t0EO32Ysf+vbY=
+		</data>
+		<key>1.png</key>
+		<data>
+		XdS4YSXZ5JxQZybBX2f5WZXRo9Q=
+		</data>
+		<key>1@2x.png</key>
+		<data>
+		kRJaLOsJuNhvwEs/8bhUPwrOdKs=
+		</data>
+		<key>2-selected.png</key>
+		<data>
+		EvbVhNfmkXSvoQdCpgwsFIRkRzw=
+		</data>
+		<key>2-selected@2x.png</key>
+		<data>
+		YxudhzKOu48kNew46k/4B1Fn9rI=
+		</data>
+		<key>2.png</key>
+		<data>
+		gp2gi3tnDMG460ZZSgHTBW9JY4s=
+		</data>
+		<key>2@2x.png</key>
+		<data>
+		5wUhvKLojOW/80K1ngNrq3EHVHo=
+		</data>
+		<key>4-selected.png</key>
+		<data>
+		HLWdDsCSieriKQvWjGvh0nRt/R0=
+		</data>
+		<key>4-selected@2x.png</key>
+		<data>
+		14pyPwDBsrbF/vgu2/GW1n15hMc=
+		</data>
+		<key>4.png</key>
+		<data>
+		j/Rb4b25aopqcE8JiGWAm6/EtSQ=
+		</data>
+		<key>4@2x.png</key>
+		<data>
+		9WfIJz427aildML6FYLpd+ad7VY=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		ELQA0MHRLf9TQUuNmwZmqRSDFxk=
+		dHgr/FyW1pt6HFIzpcHSNk1ItpE=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5DxEy/MuxDDg3hyrvKicbOtFFIs=
+			EIguXCscOk++khzW6WlZ62yocSo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -21,7 +69,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6wMNKq6K0NW/u6oz6Y7Wx0kesm0=
+			SvEoTjieu40f83Y1u6B5NzMRotA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/Go Shopping.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qV0jau1P2FfFX3SyzR/bqAn3tyw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -30,7 +87,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6DmenUHoRatwWPQwFkaLY10D6sI=
+			uVuQh2OjINYY2Y0KrcZRSj/cIYM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -39,7 +96,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZBIHdXR6WHIANOIusBb/GsEv/sc=
+			/gEE8ScUu0TtaXiMV+BRilqI8qw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/LHE-xr-VU3-view-F7r-uN-445.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u89hA2G+Ojt5qwWNgAXqEzrH7T8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -48,16 +114,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hFAnwel35cZuefx+DTLQ8pd1ZJE=
+			2ppGRNUbjegU0R9LvDmWELef+6s=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/ReceiptV_Main.storyboardc/Shop Store.nib</key>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/My Shopping List.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g8VWRqJpl1/EkFtWgAVDQyqetdM=
+			qh3mhht1j99D5gLre0g2gpZI8aI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/My Store List.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SQUW44s8xwt2WIVopyMTDTIuojM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -66,7 +141,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IJ1DP14CJihN3F2D4pDywY/CMOY=
+			rfpax/gSvsTdOzo1h0r8f1R/JkE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/dba-rk-OFb-view-XqF-UD-FkV.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o/GDCHAUSAEg+eEn3l8xbJGH3og=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -75,14 +159,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UP8bsQx0XYCM1GJkYSJf8Wyj2YM=
+			R9lTHIS7i32/RReOxvGV7hv+JbM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		2JgCof4aw7klvRW6O4vcZSJ6XVY=
+		tPqpq218Xciobvm0jZOeYslwXjA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -100,22 +184,98 @@
 		<data>
 		T73nmFIZF1yBtJaYH7CArsGzhJk=
 		</data>
+		<key>TGCameraAuthorizationViewController.nib</key>
+		<data>
+		9t7gzjYd+c1sTm8WdHc2UmhNBIY=
+		</data>
+		<key>TGCameraAuthorizationViewController.strings</key>
+		<data>
+		agMw9uUH5E6Kdc3f219j+ipUjLo=
+		</data>
+		<key>TGCameraViewController.nib</key>
+		<data>
+		rslyhiJtzTkgQQDgKBIwti0o5m8=
+		</data>
+		<key>TGPhotoViewController.nib</key>
+		<data>
+		cOo+d8xLjWA+2djRvh7TEiyC7yc=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		xNMnXHHGhysV5E/c0fkqELmUm/A=
 		</data>
+		<key>frame02-568h@2x.png</key>
+		<data>
+		7xW3D4l7VEv96Yc5/M0UENUfkXQ=
+		</data>
+		<key>frame02.png</key>
+		<data>
+		lbJVLLBOoxdg0YaTEb+sg7y71Og=
+		</data>
+		<key>frame02@2x.png</key>
+		<data>
+		qwW/OfEquj4Sm9/MMsLoPACznrI=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>1-selected.png</key>
+		<data>
+		8XkGWupzhAM+iCy7nroEu9hvfDQ=
+		</data>
+		<key>1-selected@2x.png</key>
+		<data>
+		d38pCc1Mqy5Ie7t0EO32Ysf+vbY=
+		</data>
+		<key>1.png</key>
+		<data>
+		XdS4YSXZ5JxQZybBX2f5WZXRo9Q=
+		</data>
+		<key>1@2x.png</key>
+		<data>
+		kRJaLOsJuNhvwEs/8bhUPwrOdKs=
+		</data>
+		<key>2-selected.png</key>
+		<data>
+		EvbVhNfmkXSvoQdCpgwsFIRkRzw=
+		</data>
+		<key>2-selected@2x.png</key>
+		<data>
+		YxudhzKOu48kNew46k/4B1Fn9rI=
+		</data>
+		<key>2.png</key>
+		<data>
+		gp2gi3tnDMG460ZZSgHTBW9JY4s=
+		</data>
+		<key>2@2x.png</key>
+		<data>
+		5wUhvKLojOW/80K1ngNrq3EHVHo=
+		</data>
+		<key>4-selected.png</key>
+		<data>
+		HLWdDsCSieriKQvWjGvh0nRt/R0=
+		</data>
+		<key>4-selected@2x.png</key>
+		<data>
+		14pyPwDBsrbF/vgu2/GW1n15hMc=
+		</data>
+		<key>4.png</key>
+		<data>
+		j/Rb4b25aopqcE8JiGWAm6/EtSQ=
+		</data>
+		<key>4@2x.png</key>
+		<data>
+		9WfIJz427aildML6FYLpd+ad7VY=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		ELQA0MHRLf9TQUuNmwZmqRSDFxk=
+		dHgr/FyW1pt6HFIzpcHSNk1ItpE=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5DxEy/MuxDDg3hyrvKicbOtFFIs=
+			EIguXCscOk++khzW6WlZ62yocSo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -124,7 +284,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6wMNKq6K0NW/u6oz6Y7Wx0kesm0=
+			SvEoTjieu40f83Y1u6B5NzMRotA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/Go Shopping.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qV0jau1P2FfFX3SyzR/bqAn3tyw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -133,7 +302,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6DmenUHoRatwWPQwFkaLY10D6sI=
+			uVuQh2OjINYY2Y0KrcZRSj/cIYM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -142,7 +311,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZBIHdXR6WHIANOIusBb/GsEv/sc=
+			/gEE8ScUu0TtaXiMV+BRilqI8qw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/LHE-xr-VU3-view-F7r-uN-445.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u89hA2G+Ojt5qwWNgAXqEzrH7T8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -151,16 +329,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hFAnwel35cZuefx+DTLQ8pd1ZJE=
+			2ppGRNUbjegU0R9LvDmWELef+6s=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/ReceiptV_Main.storyboardc/Shop Store.nib</key>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/My Shopping List.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g8VWRqJpl1/EkFtWgAVDQyqetdM=
+			qh3mhht1j99D5gLre0g2gpZI8aI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/My Store List.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SQUW44s8xwt2WIVopyMTDTIuojM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -169,7 +356,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IJ1DP14CJihN3F2D4pDywY/CMOY=
+			rfpax/gSvsTdOzo1h0r8f1R/JkE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/ReceiptV_Main.storyboardc/dba-rk-OFb-view-XqF-UD-FkV.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o/GDCHAUSAEg+eEn3l8xbJGH3og=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -178,7 +374,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UP8bsQx0XYCM1GJkYSJf8Wyj2YM=
+			R9lTHIS7i32/RReOxvGV7hv+JbM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -195,9 +391,37 @@
 		<data>
 		T73nmFIZF1yBtJaYH7CArsGzhJk=
 		</data>
+		<key>TGCameraAuthorizationViewController.nib</key>
+		<data>
+		9t7gzjYd+c1sTm8WdHc2UmhNBIY=
+		</data>
+		<key>TGCameraAuthorizationViewController.strings</key>
+		<data>
+		agMw9uUH5E6Kdc3f219j+ipUjLo=
+		</data>
+		<key>TGCameraViewController.nib</key>
+		<data>
+		rslyhiJtzTkgQQDgKBIwti0o5m8=
+		</data>
+		<key>TGPhotoViewController.nib</key>
+		<data>
+		cOo+d8xLjWA+2djRvh7TEiyC7yc=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		xNMnXHHGhysV5E/c0fkqELmUm/A=
+		</data>
+		<key>frame02-568h@2x.png</key>
+		<data>
+		7xW3D4l7VEv96Yc5/M0UENUfkXQ=
+		</data>
+		<key>frame02.png</key>
+		<data>
+		lbJVLLBOoxdg0YaTEb+sg7y71Og=
+		</data>
+		<key>frame02@2x.png</key>
+		<data>
+		qwW/OfEquj4Sm9/MMsLoPACznrI=
 		</data>
 	</dict>
 	<key>rules</key>

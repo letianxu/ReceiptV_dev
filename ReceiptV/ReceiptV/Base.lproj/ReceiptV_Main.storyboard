@@ -30,14 +30,36 @@
                         <viewControllerLayoutGuide type="top" id="Ha2-sn-pzN"/>
                         <viewControllerLayoutGuide type="bottom" id="CIQ-o9-UFg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XqF-UD-FkV" customClass="MKMapView">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="XqF-UD-FkV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yoz-SX-zwN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="579"/>
+                                </variation>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="yoz-SX-zwN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="yoz-SX-zwN"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="XqF-UD-FkV" id="mSW-RU-9fR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10G-GR-FtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104" y="372"/>
+            <point key="canvasLocation" x="1087.5" y="372"/>
         </scene>
         <!--Store Table View Controller-->
         <scene sceneID="Jkz-Ew-vzz">

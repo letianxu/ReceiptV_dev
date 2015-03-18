@@ -9,117 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ReceiptV/ReceiptV/RVAppDelegate.h"
-            timestampString = "447624550.977797"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[RVAppDelegate window]"
-                  moduleName = "ReceiptV"
-                  urlString = "file:///Users/lxu/Projects/c_projects/ReceiptV/ReceiptV/ReceiptV/RVAppDelegate.h"
-                  timestampString = "447647572.564011"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[RVAppDelegate setWindow:]"
-                  moduleName = "ReceiptV"
-                  urlString = "file:///Users/lxu/Projects/c_projects/ReceiptV/ReceiptV/ReceiptV/RVAppDelegate.h"
-                  timestampString = "447647572.566704"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ReceiptV/ReceiptV/RVMenuViewController.m"
-            timestampString = "447626239.709242"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[RVMenuViewController paneViewControllerTitles]"
-                  moduleName = "ReceiptV"
-                  urlString = "file:///Users/lxu/Projects/c_projects/ReceiptV/ReceiptV/ReceiptV/RVMenuViewController.m"
-                  timestampString = "447735451.542779"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[RVMenuViewController setPaneViewControllerTitles:]"
-                  moduleName = "ReceiptV"
-                  urlString = "file:///Users/lxu/Projects/c_projects/ReceiptV/ReceiptV/ReceiptV/RVMenuViewController.m"
-                  timestampString = "447735451.543045"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ReceiptV/ReceiptV/RVAppDelegate.m"
-            timestampString = "447734497.444725"
+            timestampString = "448251897.83603"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ReceiptV/ReceiptV/RVAppDelegate.m"
-            timestampString = "447734497.444725"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-windowBackground"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

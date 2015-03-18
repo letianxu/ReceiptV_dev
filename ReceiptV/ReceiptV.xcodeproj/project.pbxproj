@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90046821AB7BB4200B4B765 /* 1-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046721AB7BB4200B4B765 /* 1-selected.png */; };
+		B90046831AB7BB4200B4B765 /* 1-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046731AB7BB4200B4B765 /* 1-selected@2x.png */; };
+		B90046841AB7BB4200B4B765 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046741AB7BB4200B4B765 /* 1.png */; };
+		B90046851AB7BB4200B4B765 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046751AB7BB4200B4B765 /* 1@2x.png */; };
+		B90046861AB7BB4200B4B765 /* 2-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046761AB7BB4200B4B765 /* 2-selected.png */; };
+		B90046871AB7BB4200B4B765 /* 2-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046771AB7BB4200B4B765 /* 2-selected@2x.png */; };
+		B90046881AB7BB4200B4B765 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046781AB7BB4200B4B765 /* 2.png */; };
+		B90046891AB7BB4200B4B765 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046791AB7BB4200B4B765 /* 2@2x.png */; };
+		B900468E1AB7BB4200B4B765 /* 4-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B900467E1AB7BB4200B4B765 /* 4-selected.png */; };
+		B900468F1AB7BB4200B4B765 /* 4-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B900467F1AB7BB4200B4B765 /* 4-selected@2x.png */; };
+		B90046901AB7BB4200B4B765 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046801AB7BB4200B4B765 /* 4.png */; };
+		B90046911AB7BB4200B4B765 /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046811AB7BB4200B4B765 /* 4@2x.png */; };
+		B99519961AB9114F00698170 /* FRCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99519951AB9114F00698170 /* FRCImagePickerController.m */; };
+		B995199A1AB9127A00698170 /* frame02-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519971AB9127A00698170 /* frame02-568h@2x.png */; };
+		B995199B1AB9127A00698170 /* frame02.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519981AB9127A00698170 /* frame02.png */; };
+		B995199C1AB9127A00698170 /* frame02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519991AB9127A00698170 /* frame02@2x.png */; };
+		B995199E1AB917A700698170 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995199D1AB917A700698170 /* MapKit.framework */; };
 		B9BCDA831AB525F00022231D /* RVShoppingListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */; };
 		B9BCDA8B1AB678AE0022231D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BCDA8A1AB678AE0022231D /* libPods.a */; };
 		B9BCDA8E1AB67B550022231D /* RVShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */; };
@@ -36,6 +53,24 @@
 /* Begin PBXFileReference section */
 		1AFA6BF37D9C78C0773BE999 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		29D5F5C1ECEF70C6CBF670CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B90046721AB7BB4200B4B765 /* 1-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-selected.png"; path = "Images.xcassets/1-selected.png"; sourceTree = "<group>"; };
+		B90046731AB7BB4200B4B765 /* 1-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-selected@2x.png"; path = "Images.xcassets/1-selected@2x.png"; sourceTree = "<group>"; };
+		B90046741AB7BB4200B4B765 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Images.xcassets/1.png; sourceTree = "<group>"; };
+		B90046751AB7BB4200B4B765 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1@2x.png"; path = "Images.xcassets/1@2x.png"; sourceTree = "<group>"; };
+		B90046761AB7BB4200B4B765 /* 2-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2-selected.png"; path = "Images.xcassets/2-selected.png"; sourceTree = "<group>"; };
+		B90046771AB7BB4200B4B765 /* 2-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2-selected@2x.png"; path = "Images.xcassets/2-selected@2x.png"; sourceTree = "<group>"; };
+		B90046781AB7BB4200B4B765 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = Images.xcassets/2.png; sourceTree = "<group>"; };
+		B90046791AB7BB4200B4B765 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2@2x.png"; path = "Images.xcassets/2@2x.png"; sourceTree = "<group>"; };
+		B900467E1AB7BB4200B4B765 /* 4-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "4-selected.png"; path = "Images.xcassets/4-selected.png"; sourceTree = "<group>"; };
+		B900467F1AB7BB4200B4B765 /* 4-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "4-selected@2x.png"; path = "Images.xcassets/4-selected@2x.png"; sourceTree = "<group>"; };
+		B90046801AB7BB4200B4B765 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = Images.xcassets/4.png; sourceTree = "<group>"; };
+		B90046811AB7BB4200B4B765 /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "4@2x.png"; path = "Images.xcassets/4@2x.png"; sourceTree = "<group>"; };
+		B99519941AB9114F00698170 /* FRCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCImagePickerController.h; sourceTree = "<group>"; };
+		B99519951AB9114F00698170 /* FRCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCImagePickerController.m; sourceTree = "<group>"; };
+		B99519971AB9127A00698170 /* frame02-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "frame02-568h@2x.png"; path = "Images.xcassets/frame02-568h@2x.png"; sourceTree = "<group>"; };
+		B99519981AB9127A00698170 /* frame02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame02.png; path = Images.xcassets/frame02.png; sourceTree = "<group>"; };
+		B99519991AB9127A00698170 /* frame02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "frame02@2x.png"; path = "Images.xcassets/frame02@2x.png"; sourceTree = "<group>"; };
+		B995199D1AB917A700698170 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B9BCDA811AB525F00022231D /* RVShoppingListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVShoppingListTableViewController.h; sourceTree = "<group>"; };
 		B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVShoppingListTableViewController.m; sourceTree = "<group>"; };
 		B9BCDA8A1AB678AE0022231D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
@@ -68,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B995199E1AB917A700698170 /* MapKit.framework in Frameworks */,
 				B9BCDA8B1AB678AE0022231D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +121,7 @@
 		17ACEC5E7534B99D2E33F081 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B995199D1AB917A700698170 /* MapKit.framework */,
 				B9BCDA8A1AB678AE0022231D /* libPods.a */,
 			);
 			name = Frameworks;
@@ -122,6 +159,8 @@
 		B9D3AC451AAE22F50094A70A /* ReceiptV */ = {
 			isa = PBXGroup;
 			children = (
+				B99519941AB9114F00698170 /* FRCImagePickerController.h */,
+				B99519951AB9114F00698170 /* FRCImagePickerController.m */,
 				B9BCDA8C1AB67B550022231D /* RVShoppingViewController.h */,
 				B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */,
 				B9BCDA811AB525F00022231D /* RVShoppingListTableViewController.h */,
@@ -138,6 +177,21 @@
 				B9D3AC4A1AAE22F60094A70A /* RVAppDelegate.h */,
 				B9D3AC4B1AAE22F60094A70A /* RVAppDelegate.m */,
 				B9D3AC561AAE22F60094A70A /* Images.xcassets */,
+				B99519971AB9127A00698170 /* frame02-568h@2x.png */,
+				B99519981AB9127A00698170 /* frame02.png */,
+				B99519991AB9127A00698170 /* frame02@2x.png */,
+				B90046721AB7BB4200B4B765 /* 1-selected.png */,
+				B90046731AB7BB4200B4B765 /* 1-selected@2x.png */,
+				B90046741AB7BB4200B4B765 /* 1.png */,
+				B90046751AB7BB4200B4B765 /* 1@2x.png */,
+				B90046761AB7BB4200B4B765 /* 2-selected.png */,
+				B90046771AB7BB4200B4B765 /* 2-selected@2x.png */,
+				B90046781AB7BB4200B4B765 /* 2.png */,
+				B90046791AB7BB4200B4B765 /* 2@2x.png */,
+				B900467E1AB7BB4200B4B765 /* 4-selected.png */,
+				B900467F1AB7BB4200B4B765 /* 4-selected@2x.png */,
+				B90046801AB7BB4200B4B765 /* 4.png */,
+				B90046811AB7BB4200B4B765 /* 4@2x.png */,
 				B9D3AC581AAE22F60094A70A /* LaunchScreen.xib */,
 				B9D3AC4D1AAE22F60094A70A /* ReceiptV.xcdatamodeld */,
 				B9D3AC461AAE22F60094A70A /* Supporting Files */,
@@ -253,9 +307,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90046901AB7BB4200B4B765 /* 4.png in Resources */,
+				B90046871AB7BB4200B4B765 /* 2-selected@2x.png in Resources */,
+				B90046821AB7BB4200B4B765 /* 1-selected.png in Resources */,
+				B90046881AB7BB4200B4B765 /* 2.png in Resources */,
+				B900468F1AB7BB4200B4B765 /* 4-selected@2x.png in Resources */,
+				B995199A1AB9127A00698170 /* frame02-568h@2x.png in Resources */,
+				B90046861AB7BB4200B4B765 /* 2-selected.png in Resources */,
 				B9D3AC9F1AAFE46B0094A70A /* LaunchScreen.xib in Resources */,
+				B995199C1AB9127A00698170 /* frame02@2x.png in Resources */,
+				B995199B1AB9127A00698170 /* frame02.png in Resources */,
+				B90046831AB7BB4200B4B765 /* 1-selected@2x.png in Resources */,
+				B90046911AB7BB4200B4B765 /* 4@2x.png in Resources */,
+				B90046841AB7BB4200B4B765 /* 1.png in Resources */,
 				B9D3AC9E1AAFE4630094A70A /* ReceiptV_Main.storyboard in Resources */,
+				B900468E1AB7BB4200B4B765 /* 4-selected.png in Resources */,
+				B90046891AB7BB4200B4B765 /* 2@2x.png in Resources */,
 				B9D3AC571AAE22F60094A70A /* Images.xcassets in Resources */,
+				B90046851AB7BB4200B4B765 /* 1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +382,7 @@
 				B9D3AC4F1AAE22F60094A70A /* ReceiptV.xcdatamodeld in Sources */,
 				B9D3AC921AAE3BF60094A70A /* RVMenuTableViewHeader.m in Sources */,
 				B9D3AC491AAE22F60094A70A /* main.m in Sources */,
+				B99519961AB9114F00698170 /* FRCImagePickerController.m in Sources */,
 				B9D3AC951AAE82EF0094A70A /* RVStoreTableViewController.m in Sources */,
 				B9BCDA8E1AB67B550022231D /* RVShoppingViewController.m in Sources */,
 			);

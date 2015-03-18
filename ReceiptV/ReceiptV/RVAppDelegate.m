@@ -77,7 +77,8 @@
 - (UIImageView *)windowBackground
 {
     if (!_windowBackground) {
-        _windowBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Window Background"]];
+        UIImage* bgImage = [UIImage imageNamed:@"Window Background"];
+        _windowBackground = [[UIImageView alloc] initWithImage:bgImage];
     }
     return _windowBackground;
 }

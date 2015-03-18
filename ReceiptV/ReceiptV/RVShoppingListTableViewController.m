@@ -28,7 +28,7 @@
 
 #import "RVShoppingListTableViewController.h"
 
-NSString * const RVStoreCellReuseIdentifier = @"My Shopping List";
+NSString * const RVShoppingListCellReuseIdentifier = @"My Shopping List";
 
 @implementation RVShoppingListTableViewController
 
@@ -42,7 +42,7 @@ NSString * const RVStoreCellReuseIdentifier = @"My Shopping List";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:RVStoreCellReuseIdentifier];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:RVShoppingListCellReuseIdentifier];
 }
 
 #pragma mark - UITableViewDataSource
@@ -54,7 +54,7 @@ NSString * const RVStoreCellReuseIdentifier = @"My Shopping List";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:RVStoreCellReuseIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:RVShoppingListCellReuseIdentifier forIndexPath:indexPath];
 
     cell.textLabel.text = @"Tomato";
     return cell;

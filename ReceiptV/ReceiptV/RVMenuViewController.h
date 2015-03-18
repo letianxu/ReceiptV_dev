@@ -32,7 +32,6 @@
 typedef NS_ENUM(NSUInteger, RVPaneViewControllerType) {
     RVPaneViewControllerTypeGoShopping,
     RVPaneViewControllerTypeMyShoppingList,
-    RVPaneViewControllerTypeMyReceiptList,
     RVPaneViewControllerTypeMyStoreList,
     RVPaneViewControllerTypeTips,
     RVPaneViewControllerTypeContactUs,
