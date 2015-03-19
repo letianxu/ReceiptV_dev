@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B27B6D711ABA022B00B2DC62 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B6D701ABA022B00B2DC62 /* libPods.a */; };
+		B27B6D741ABB058100B2DC62 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B27B6D731ABB058100B2DC62 /* DBManager.m */; };
 		B90046821AB7BB4200B4B765 /* 1-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046721AB7BB4200B4B765 /* 1-selected.png */; };
 		B90046831AB7BB4200B4B765 /* 1-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046731AB7BB4200B4B765 /* 1-selected@2x.png */; };
 		B90046841AB7BB4200B4B765 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046741AB7BB4200B4B765 /* 1.png */; };
@@ -54,6 +55,8 @@
 		1AFA6BF37D9C78C0773BE999 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		29D5F5C1ECEF70C6CBF670CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B27B6D701ABA022B00B2DC62 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		B27B6D721ABB058100B2DC62 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		B27B6D731ABB058100B2DC62 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		B90046721AB7BB4200B4B765 /* 1-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-selected.png"; path = "Images.xcassets/1-selected.png"; sourceTree = "<group>"; };
 		B90046731AB7BB4200B4B765 /* 1-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-selected@2x.png"; path = "Images.xcassets/1-selected@2x.png"; sourceTree = "<group>"; };
 		B90046741AB7BB4200B4B765 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Images.xcassets/1.png; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 				B9D3AC861AAE2B080094A70A /* ReceiptV_Main.storyboard */,
 				B9D3AC4A1AAE22F60094A70A /* RVAppDelegate.h */,
 				B9D3AC4B1AAE22F60094A70A /* RVAppDelegate.m */,
+				B27B6D721ABB058100B2DC62 /* DBManager.h */,
+				B27B6D731ABB058100B2DC62 /* DBManager.m */,
 				B9D3AC561AAE22F60094A70A /* Images.xcassets */,
 				B99519971AB9127A00698170 /* frame02-568h@2x.png */,
 				B99519981AB9127A00698170 /* frame02.png */,
@@ -382,6 +387,7 @@
 				B9D3AC4F1AAE22F60094A70A /* ReceiptV.xcdatamodeld in Sources */,
 				B9D3AC921AAE3BF60094A70A /* RVMenuTableViewHeader.m in Sources */,
 				B9D3AC491AAE22F60094A70A /* main.m in Sources */,
+				B27B6D741ABB058100B2DC62 /* DBManager.m in Sources */,
 				B99519961AB9114F00698170 /* FRCImagePickerController.m in Sources */,
 				B9D3AC951AAE82EF0094A70A /* RVStoreTableViewController.m in Sources */,
 				B9BCDA8E1AB67B550022231D /* RVShoppingViewController.m in Sources */,
