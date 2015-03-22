@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <FMDatabase.h>
+#import "ShopItem.h"
 
-@class ShopItem;
 @interface DBManager : NSObject
 
 - (instancetype)initDataBaseWithFilename:(NSString*)fileName;
 
-- (BOOL) createTableWithName:(NSString*)tableName primaryKey:(NSString*)key; //TODO input a class and retreive the member name as column name
+- (BOOL) createTableWithName:(NSString*)tableName primaryKey:(NSString*)key shopItemClass:(Class)shopItemClass;
 
 - (BOOL) addShopItemToTable:(NSString*)tableName item:(ShopItem *)item;
 

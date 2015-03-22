@@ -21,6 +21,7 @@
 		B900468F1AB7BB4200B4B765 /* 4-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B900467F1AB7BB4200B4B765 /* 4-selected@2x.png */; };
 		B90046901AB7BB4200B4B765 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046801AB7BB4200B4B765 /* 4.png */; };
 		B90046911AB7BB4200B4B765 /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046811AB7BB4200B4B765 /* 4@2x.png */; };
+		B983BFD71ABE639900D715D4 /* ShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B983BFD61ABE639900D715D4 /* ShopItem.m */; };
 		B99519961AB9114F00698170 /* FRCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99519951AB9114F00698170 /* FRCImagePickerController.m */; };
 		B995199A1AB9127A00698170 /* frame02-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519971AB9127A00698170 /* frame02-568h@2x.png */; };
 		B995199B1AB9127A00698170 /* frame02.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519981AB9127A00698170 /* frame02.png */; };
@@ -69,6 +70,8 @@
 		B900467F1AB7BB4200B4B765 /* 4-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "4-selected@2x.png"; path = "Images.xcassets/4-selected@2x.png"; sourceTree = "<group>"; };
 		B90046801AB7BB4200B4B765 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = Images.xcassets/4.png; sourceTree = "<group>"; };
 		B90046811AB7BB4200B4B765 /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "4@2x.png"; path = "Images.xcassets/4@2x.png"; sourceTree = "<group>"; };
+		B983BFD51ABE639900D715D4 /* ShopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItem.h; sourceTree = "<group>"; };
+		B983BFD61ABE639900D715D4 /* ShopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItem.m; sourceTree = "<group>"; };
 		B99519941AB9114F00698170 /* FRCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCImagePickerController.h; sourceTree = "<group>"; };
 		B99519951AB9114F00698170 /* FRCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCImagePickerController.m; sourceTree = "<group>"; };
 		B99519971AB9127A00698170 /* frame02-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "frame02-568h@2x.png"; path = "Images.xcassets/frame02-568h@2x.png"; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				B9D3AC4B1AAE22F60094A70A /* RVAppDelegate.m */,
 				B27B6D721ABB058100B2DC62 /* DBManager.h */,
 				B27B6D731ABB058100B2DC62 /* DBManager.m */,
+				B983BFD51ABE639900D715D4 /* ShopItem.h */,
+				B983BFD61ABE639900D715D4 /* ShopItem.m */,
 				B9D3AC561AAE22F60094A70A /* Images.xcassets */,
 				B99519971AB9127A00698170 /* frame02-568h@2x.png */,
 				B99519981AB9127A00698170 /* frame02.png */,
@@ -386,6 +391,7 @@
 				B9D3AC911AAE3BF60094A70A /* RVMenuCell.m in Sources */,
 				B9D3AC4F1AAE22F60094A70A /* ReceiptV.xcdatamodeld in Sources */,
 				B9D3AC921AAE3BF60094A70A /* RVMenuTableViewHeader.m in Sources */,
+				B983BFD71ABE639900D715D4 /* ShopItem.m in Sources */,
 				B9D3AC491AAE22F60094A70A /* main.m in Sources */,
 				B27B6D741ABB058100B2DC62 /* DBManager.m in Sources */,
 				B99519961AB9114F00698170 /* FRCImagePickerController.m in Sources */,
