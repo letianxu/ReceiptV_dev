@@ -30,6 +30,12 @@
 #define COCOAPODS_VERSION_MINOR_HMSegmentedControl 5
 #define COCOAPODS_VERSION_PATCH_HMSegmentedControl 0
 
+// LLSimpleCamera
+#define COCOAPODS_POD_AVAILABLE_LLSimpleCamera
+#define COCOAPODS_VERSION_MAJOR_LLSimpleCamera 2
+#define COCOAPODS_VERSION_MINOR_LLSimpleCamera 2
+#define COCOAPODS_VERSION_PATCH_LLSimpleCamera 0
+
 // MSDynamicsDrawerViewController
 #define COCOAPODS_POD_AVAILABLE_MSDynamicsDrawerViewController
 #define COCOAPODS_VERSION_MAJOR_MSDynamicsDrawerViewController 1

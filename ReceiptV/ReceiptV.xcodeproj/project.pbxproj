@@ -22,7 +22,7 @@
 		B90046901AB7BB4200B4B765 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046801AB7BB4200B4B765 /* 4.png */; };
 		B90046911AB7BB4200B4B765 /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90046811AB7BB4200B4B765 /* 4@2x.png */; };
 		B983BFD71ABE639900D715D4 /* ShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B983BFD61ABE639900D715D4 /* ShopItem.m */; };
-		B99519961AB9114F00698170 /* FRCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99519951AB9114F00698170 /* FRCImagePickerController.m */; };
+		B983BFDF1ABFB0B900D715D4 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B983BFDE1ABFB0B900D715D4 /* CameraViewController.m */; };
 		B995199A1AB9127A00698170 /* frame02-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519971AB9127A00698170 /* frame02-568h@2x.png */; };
 		B995199B1AB9127A00698170 /* frame02.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519981AB9127A00698170 /* frame02.png */; };
 		B995199C1AB9127A00698170 /* frame02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519991AB9127A00698170 /* frame02@2x.png */; };
@@ -72,8 +72,8 @@
 		B90046811AB7BB4200B4B765 /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "4@2x.png"; path = "Images.xcassets/4@2x.png"; sourceTree = "<group>"; };
 		B983BFD51ABE639900D715D4 /* ShopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItem.h; sourceTree = "<group>"; };
 		B983BFD61ABE639900D715D4 /* ShopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItem.m; sourceTree = "<group>"; };
-		B99519941AB9114F00698170 /* FRCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCImagePickerController.h; sourceTree = "<group>"; };
-		B99519951AB9114F00698170 /* FRCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCImagePickerController.m; sourceTree = "<group>"; };
+		B983BFDD1ABFB0B900D715D4 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		B983BFDE1ABFB0B900D715D4 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		B99519971AB9127A00698170 /* frame02-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "frame02-568h@2x.png"; path = "Images.xcassets/frame02-568h@2x.png"; sourceTree = "<group>"; };
 		B99519981AB9127A00698170 /* frame02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame02.png; path = Images.xcassets/frame02.png; sourceTree = "<group>"; };
 		B99519991AB9127A00698170 /* frame02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "frame02@2x.png"; path = "Images.xcassets/frame02@2x.png"; sourceTree = "<group>"; };
@@ -142,6 +142,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B983BFDB1ABF52E200D715D4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B90046721AB7BB4200B4B765 /* 1-selected.png */,
+				B90046731AB7BB4200B4B765 /* 1-selected@2x.png */,
+				B90046741AB7BB4200B4B765 /* 1.png */,
+				B90046751AB7BB4200B4B765 /* 1@2x.png */,
+				B90046761AB7BB4200B4B765 /* 2-selected.png */,
+				B90046771AB7BB4200B4B765 /* 2-selected@2x.png */,
+				B90046781AB7BB4200B4B765 /* 2.png */,
+				B90046791AB7BB4200B4B765 /* 2@2x.png */,
+				B900467E1AB7BB4200B4B765 /* 4-selected.png */,
+				B900467F1AB7BB4200B4B765 /* 4-selected@2x.png */,
+				B90046801AB7BB4200B4B765 /* 4.png */,
+				B90046811AB7BB4200B4B765 /* 4@2x.png */,
+				B99519971AB9127A00698170 /* frame02-568h@2x.png */,
+				B99519981AB9127A00698170 /* frame02.png */,
+				B99519991AB9127A00698170 /* frame02@2x.png */,
+				B9D3AC561AAE22F60094A70A /* Images.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		B983BFDC1ABF530C00D715D4 /* WYSIWYG */ = {
+			isa = PBXGroup;
+			children = (
+				B9D3AC581AAE22F60094A70A /* LaunchScreen.xib */,
+				B9D3AC861AAE2B080094A70A /* ReceiptV_Main.storyboard */,
+			);
+			name = WYSIWYG;
+			sourceTree = "<group>";
+		};
 		B9D3AC3A1AAE22F50094A70A = {
 			isa = PBXGroup;
 			children = (
@@ -165,46 +197,30 @@
 		B9D3AC451AAE22F50094A70A /* ReceiptV */ = {
 			isa = PBXGroup;
 			children = (
-				B99519941AB9114F00698170 /* FRCImagePickerController.h */,
-				B99519951AB9114F00698170 /* FRCImagePickerController.m */,
-				B9BCDA8C1AB67B550022231D /* RVShoppingViewController.h */,
-				B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */,
-				B9BCDA811AB525F00022231D /* RVShoppingListTableViewController.h */,
-				B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */,
-				B9D3AC931AAE82EF0094A70A /* RVStoreTableViewController.h */,
-				B9D3AC941AAE82EF0094A70A /* RVStoreTableViewController.m */,
+				B983BFDD1ABFB0B900D715D4 /* CameraViewController.h */,
+				B983BFDE1ABFB0B900D715D4 /* CameraViewController.m */,
+				B27B6D721ABB058100B2DC62 /* DBManager.h */,
+				B27B6D731ABB058100B2DC62 /* DBManager.m */,
+				B9D3AC4D1AAE22F60094A70A /* ReceiptV.xcdatamodeld */,
+				B9D3AC4A1AAE22F60094A70A /* RVAppDelegate.h */,
+				B9D3AC4B1AAE22F60094A70A /* RVAppDelegate.m */,
 				B9D3AC8D1AAE3BF60094A70A /* RVMenuCell.h */,
 				B9D3AC8E1AAE3BF60094A70A /* RVMenuCell.m */,
 				B9D3AC8F1AAE3BF60094A70A /* RVMenuTableViewHeader.h */,
 				B9D3AC901AAE3BF60094A70A /* RVMenuTableViewHeader.m */,
 				B9D3AC8A1AAE398E0094A70A /* RVMenuViewController.h */,
 				B9D3AC8B1AAE398E0094A70A /* RVMenuViewController.m */,
-				B9D3AC861AAE2B080094A70A /* ReceiptV_Main.storyboard */,
-				B9D3AC4A1AAE22F60094A70A /* RVAppDelegate.h */,
-				B9D3AC4B1AAE22F60094A70A /* RVAppDelegate.m */,
-				B27B6D721ABB058100B2DC62 /* DBManager.h */,
-				B27B6D731ABB058100B2DC62 /* DBManager.m */,
+				B9BCDA811AB525F00022231D /* RVShoppingListTableViewController.h */,
+				B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */,
+				B9BCDA8C1AB67B550022231D /* RVShoppingViewController.h */,
+				B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */,
+				B9D3AC931AAE82EF0094A70A /* RVStoreTableViewController.h */,
+				B9D3AC941AAE82EF0094A70A /* RVStoreTableViewController.m */,
 				B983BFD51ABE639900D715D4 /* ShopItem.h */,
 				B983BFD61ABE639900D715D4 /* ShopItem.m */,
-				B9D3AC561AAE22F60094A70A /* Images.xcassets */,
-				B99519971AB9127A00698170 /* frame02-568h@2x.png */,
-				B99519981AB9127A00698170 /* frame02.png */,
-				B99519991AB9127A00698170 /* frame02@2x.png */,
-				B90046721AB7BB4200B4B765 /* 1-selected.png */,
-				B90046731AB7BB4200B4B765 /* 1-selected@2x.png */,
-				B90046741AB7BB4200B4B765 /* 1.png */,
-				B90046751AB7BB4200B4B765 /* 1@2x.png */,
-				B90046761AB7BB4200B4B765 /* 2-selected.png */,
-				B90046771AB7BB4200B4B765 /* 2-selected@2x.png */,
-				B90046781AB7BB4200B4B765 /* 2.png */,
-				B90046791AB7BB4200B4B765 /* 2@2x.png */,
-				B900467E1AB7BB4200B4B765 /* 4-selected.png */,
-				B900467F1AB7BB4200B4B765 /* 4-selected@2x.png */,
-				B90046801AB7BB4200B4B765 /* 4.png */,
-				B90046811AB7BB4200B4B765 /* 4@2x.png */,
-				B9D3AC581AAE22F60094A70A /* LaunchScreen.xib */,
-				B9D3AC4D1AAE22F60094A70A /* ReceiptV.xcdatamodeld */,
+				B983BFDB1ABF52E200D715D4 /* Resource */,
 				B9D3AC461AAE22F60094A70A /* Supporting Files */,
+				B983BFDC1ABF530C00D715D4 /* WYSIWYG */,
 			);
 			path = ReceiptV;
 			sourceTree = "<group>";
@@ -394,7 +410,7 @@
 				B983BFD71ABE639900D715D4 /* ShopItem.m in Sources */,
 				B9D3AC491AAE22F60094A70A /* main.m in Sources */,
 				B27B6D741ABB058100B2DC62 /* DBManager.m in Sources */,
-				B99519961AB9114F00698170 /* FRCImagePickerController.m in Sources */,
+				B983BFDF1ABFB0B900D715D4 /* CameraViewController.m in Sources */,
 				B9D3AC951AAE82EF0094A70A /* RVStoreTableViewController.m in Sources */,
 				B9BCDA8E1AB67B550022231D /* RVShoppingViewController.m in Sources */,
 			);

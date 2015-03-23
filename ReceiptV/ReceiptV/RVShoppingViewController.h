@@ -28,9 +28,8 @@
 
 @class MKMapView;
 #import "HMSegmentedControl.h"
-#import "FRCImagePickerController.h"
 
-@interface RVShoppingViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, FRCImagePickerControllerDelegate>
+@interface RVShoppingViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) HMSegmentedControl *shoppingControl;
