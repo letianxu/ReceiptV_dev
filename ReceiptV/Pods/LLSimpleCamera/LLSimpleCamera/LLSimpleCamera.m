@@ -21,6 +21,7 @@
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
 @property (strong, nonatomic) CALayer *focusBoxLayer;
 @property (strong, nonatomic) CAAnimation *focusBoxAnimation;
+@property (nonatomic) CGRect parentFrame;
 @end
 
 NSString *const LLSimpleCameraErrorDomain = @"LLSimpleCameraErrorDomain";
@@ -93,6 +94,7 @@ NSString *const LLSimpleCameraErrorDomain = @"LLSimpleCameraErrorDomain";
     [self didMoveToParentViewController:vc];
     
     vc.view.frame = frame;
+    self.parentFrame = frame;
 }
 
 # pragma mark Touch Delegate
@@ -167,6 +169,7 @@ NSString *const LLSimpleCameraErrorDomain = @"LLSimpleCameraErrorDomain";
         
         // set size
         CGRect bounds = self.preview.layer.bounds;
+        NSLog(@"Initialize capture preview width: %f and height: %f", bounds.size.width, bounds.size.height);
         captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         captureVideoPreviewLayer.bounds = bounds;
         captureVideoPreviewLayer.position = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
@@ -567,9 +570,10 @@ NSString *const LLSimpleCameraErrorDomain = @"LLSimpleCameraErrorDomain";
     
 //    NSLog(@"layout cameraVC : %d", self.interfaceOrientation);
     
-    self.preview.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+    self.preview.frame = self.parentFrame;//CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     
     CGRect bounds = self.preview.bounds;
+    NSLog(@"viewWillLayoutSubviews capture preview width: %f and height: %f", bounds.size.width, bounds.size.height);
     self.captureVideoPreviewLayer.bounds = bounds;
     self.captureVideoPreviewLayer.position = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
     
