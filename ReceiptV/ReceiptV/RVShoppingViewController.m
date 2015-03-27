@@ -45,13 +45,13 @@
     if (!_shoppingControl)
     {
         _shoppingControl = [[HMSegmentedControl alloc] initWithSectionImages:
-                            @[[UIImage imageNamed:@"2"],
-                              [UIImage imageNamed:@"1"],
-                              [UIImage imageNamed:@"4"]]
+                            @[[UIImage imageNamed:@"Speaker"],
+                              [UIImage imageNamed:@"Calculator"],
+                              [UIImage imageNamed:@"Receipt"]]
                                                        sectionSelectedImages:
-                            @[[UIImage imageNamed:@"2-selected"],
-                              [UIImage imageNamed:@"1-selected"],
-                              [UIImage imageNamed:@"4-selected"]]];
+                            @[[UIImage imageNamed:@"Speaker"],
+                              [UIImage imageNamed:@"Calculator"],
+                              [UIImage imageNamed:@"Receipt"]]];
         
         CGFloat viewWidth = CGRectGetWidth(self.view.frame);
         CGFloat viewHeight = CGRectGetHeight(self.view.frame);

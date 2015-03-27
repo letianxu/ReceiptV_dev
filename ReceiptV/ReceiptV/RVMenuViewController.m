@@ -154,7 +154,7 @@ typedef NS_ENUM(NSUInteger, RVMenuViewControllerTableViewSectionType) {
     
     paneViewController.navigationItem.title = self.paneViewControllerTitles[@(paneViewControllerType)];
     
-    self.paneRevealLeftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Left Reveal Icon"] style:UIBarButtonItemStyleBordered target:self action:@selector(dynamicsDrawerRevealLeftBarButtonItemTapped:)];
+    self.paneRevealLeftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Shop Store"] style:UIBarButtonItemStyleBordered target:self action:@selector(dynamicsDrawerRevealLeftBarButtonItemTapped:)];
     paneViewController.navigationItem.leftBarButtonItem = self.paneRevealLeftBarButtonItem;
     
     self.paneRevealRightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Right Reveal Icon"] style:UIBarButtonItemStyleBordered target:self action:@selector(dynamicsDrawerRevealRightBarButtonItemTapped:)];
