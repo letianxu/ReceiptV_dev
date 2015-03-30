@@ -69,7 +69,7 @@
     NSLog(@"Selected index %ld (via UIControlEventValueChanged)", (long)segmentedControl.selectedSegmentIndex);
     switch (segmentedControl.selectedSegmentIndex)
     {
-        case 0:
+        case 2:
         {
             CameraViewController *picker = [[CameraViewController alloc] init];
             [self presentViewController:picker animated:YES completion:^{}];

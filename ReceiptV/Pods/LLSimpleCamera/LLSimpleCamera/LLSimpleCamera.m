@@ -169,7 +169,7 @@ NSString *const LLSimpleCameraErrorDomain = @"LLSimpleCameraErrorDomain";
         
         // set size
         CGRect bounds = self.preview.layer.bounds;
-        NSLog(@"Initialize capture preview width: %f and height: %f", bounds.size.width, bounds.size.height);
+        NSLog(@"Initialize capture preview x: %f y: %f width: %f and height: %f", bounds.origin.x, bounds.origin.y, bounds.size.width, bounds.size.height);
         captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         captureVideoPreviewLayer.bounds = bounds;
         captureVideoPreviewLayer.position = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
@@ -282,6 +282,7 @@ NSString *const LLSimpleCameraErrorDomain = @"LLSimpleCameraErrorDomain";
 
 - (UIImage *)cropImageUsingPreviewBounds:(UIImage *)image {
     CGRect outputRect = [self.captureVideoPreviewLayer metadataOutputRectOfInterestForRect:self.captureVideoPreviewLayer.bounds];
+    NSLog(@"cropImageUsingPreviewBounds x: %f y: %f width: %f height: %f", outputRect.origin.x, outputRect.origin.y, outputRect.size.width, outputRect.size.height);
     CGImageRef takenCGImage = image.CGImage;
     size_t width = CGImageGetWidth(takenCGImage);
     size_t height = CGImageGetHeight(takenCGImage);
