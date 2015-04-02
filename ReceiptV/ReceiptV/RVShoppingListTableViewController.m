@@ -27,8 +27,14 @@
 //
 
 #import "RVShoppingListTableViewController.h"
+#import "DBManager.h"
 
 NSString * const RVShoppingListCellReuseIdentifier = @"My Shopping List";
+
+@interface RVShoppingListTableViewController() {
+    NSMutableArray *_shopItems;
+}
+@end
 
 @implementation RVShoppingListTableViewController
 
@@ -36,6 +42,7 @@ NSString * const RVShoppingListCellReuseIdentifier = @"My Shopping List";
 
 - (void)loadView
 {
+    _shopItems = [[DBManager sharedInstance] getShoptItems:@"dummy"];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
 }
 
@@ -49,14 +56,14 @@ NSString * const RVShoppingListCellReuseIdentifier = @"My Shopping List";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [_shopItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:RVShoppingListCellReuseIdentifier forIndexPath:indexPath];
 
-    cell.textLabel.text = @"Tomato";
+    cell.textLabel.text = [_shopItems[indexPath.row] name];
     return cell;
 }
 

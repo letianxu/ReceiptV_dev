@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];

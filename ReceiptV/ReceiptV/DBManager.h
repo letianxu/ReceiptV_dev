@@ -12,7 +12,7 @@
 
 @interface DBManager : NSObject
 
-- (instancetype)initDataBaseWithFilename:(NSString*)fileName;
++ (DBManager*)sharedInstance;
 
 - (BOOL) createTableWithName:(NSString*)tableName primaryKey:(NSString*)key shopItemClass:(Class)shopItemClass;
 
@@ -22,7 +22,7 @@
 
 - (BOOL) updateShopItemInTable:(NSString*)tableName item:(ShopItem*)item;
 
-- (NSArray *)getShoptItem;
+- (NSMutableArray *)getShoptItems:(NSString*)tableName;
 
 - (BOOL) close;
 

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReceiptV/ReceiptV/RVAppDelegate.m"
-            timestampString = "448251897.83603"
+            timestampString = "449460603.080323"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-windowBackground"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReceiptV/ReceiptV/DBManager.m"
-            timestampString = "448689454.927226"
+            timestampString = "449636043.88461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "@interface DBManager()"
             landmarkType = "2">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReceiptV/ReceiptV/DBManager.m"
-            timestampString = "448689454.927226"
+            timestampString = "449636043.88461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-initDataBaseWithFilename:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReceiptV/ReceiptV/DBManager.m"
-            timestampString = "448689454.927226"
+            timestampString = "449636043.88461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-createTableWithName:primaryKey:shopItemClass:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReceiptV/ReceiptV/DBManager.m"
-            timestampString = "448689454.927226"
+            timestampString = "449636043.88461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "-addShopItemToTable:item:"
             landmarkType = "5">
          </BreakpointContent>

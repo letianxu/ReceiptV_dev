@@ -12,10 +12,23 @@
 @interface DBManager() {
     FMDatabase* _dataBase;
     NSMutableArray *_columnNames;
+    NSMutableArray *_shopItems;
 }
 @end
 
 @implementation DBManager
+
++ (DBManager*)sharedInstance
+{
+    static DBManager *_sharedInstance = nil;
+    
+    static dispatch_once_t oncePredicate;
+    
+    dispatch_once(&oncePredicate, ^{
+        _sharedInstance = [[DBManager alloc] initDataBaseWithFilename:@"ReceiptV"];
+    });
+    return _sharedInstance;
+}
 
 - (instancetype)initDataBaseWithFilename:(NSString*)fileName
 {
@@ -30,6 +43,8 @@
             NSLog(@"Database %@ can't be opened, there is no further actions on manager!", fileName);
             return nil;
         }
+        
+        _shopItems = [NSMutableArray arrayWithCapacity:0];
     }
     return self;
 }
@@ -111,6 +126,11 @@
     NSLog(@"add item sql string: %@\n", addItemString);
 
     return [_dataBase executeUpdate:addItemString];
+}
+
+- (NSMutableArray *)getShoptItems:(NSString*)tableName
+{
+    return _shopItems;
 }
 
 
