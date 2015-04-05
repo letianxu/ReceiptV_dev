@@ -22,27 +22,27 @@
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>122FECDFE13F5AC2E33223B2</key>
+		<key>0051886A5177F304B179C205</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>64F6DF9C29F3E4B90F73C8CD</key>
+		<key>138EE861F8A471EEB4C92E4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC6B04B3447638577CB56055</key>
+		<key>409B5E7C086AD585A94EA4E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E5CEE1EC7A5AEF7434A9EE20</key>
+		<key>F279CF877DCAA7F4C9B81F20</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,1 +1,1 @@
-../../../LLSimpleCamera/LLSimpleCamera/UIImage+FixOrientation.h
+../../../../../Libraries/LLSimpleCamera/LLSimpleCamera/UIImage+FixOrientation.h

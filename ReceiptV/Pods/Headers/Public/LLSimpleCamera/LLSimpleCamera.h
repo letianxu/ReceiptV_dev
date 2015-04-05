@@ -1,1 +1,1 @@
-../../../LLSimpleCamera/LLSimpleCamera/LLSimpleCamera.h
+../../../../../Libraries/LLSimpleCamera/LLSimpleCamera/LLSimpleCamera.h

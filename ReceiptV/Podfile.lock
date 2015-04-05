@@ -9,16 +9,18 @@ PODS:
 
 DEPENDENCIES:
   - FMDB
-  - LLSimpleCamera (~> 2.2)
+  - LLSimpleCamera (from `../Libraries/`)
   - MSDynamicsDrawerViewController (from `../Libraries/`)
 
 EXTERNAL SOURCES:
+  LLSimpleCamera:
+    :path: ../Libraries/
   MSDynamicsDrawerViewController:
     :path: ../Libraries/
 
 SPEC CHECKSUMS:
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
-  LLSimpleCamera: 360c9647008f3cc8062748dbe7e4ebc7b4fbde04
+  LLSimpleCamera: a270fa35cc42971b5c7c0067582fb3467714c547
   MSDynamicsDrawerViewController: 2409ca61449d8541a3ee640bfd2d230c3734d3c4
 
 COCOAPODS: 0.35.0
