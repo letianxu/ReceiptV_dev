@@ -4,26 +4,21 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
-  - HMSegmentedControl (1.5)
   - LLSimpleCamera (2.2.0)
   - MSDynamicsDrawerViewController (1.5.1)
 
 DEPENDENCIES:
   - FMDB
-  - HMSegmentedControl (from `../Libraries/`)
   - LLSimpleCamera (~> 2.2)
   - MSDynamicsDrawerViewController (from `../Libraries/`)
 
 EXTERNAL SOURCES:
-  HMSegmentedControl:
-    :path: ../Libraries/
   MSDynamicsDrawerViewController:
     :path: ../Libraries/
 
 SPEC CHECKSUMS:
-  FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
-  HMSegmentedControl: a178da1976eaa623a990edf1be7bdab8025fe234
-  LLSimpleCamera: 9da9e75d1c164e03c5c66314ffc0f9ec0009d8b8
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  LLSimpleCamera: 360c9647008f3cc8062748dbe7e4ebc7b4fbde04
   MSDynamicsDrawerViewController: 2409ca61449d8541a3ee640bfd2d230c3734d3c4
 
 COCOAPODS: 0.35.0

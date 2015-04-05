@@ -29,6 +29,12 @@
 #import <MapKit/MapKit.h>
 #import "CameraViewController.h"
 #import "RVShoppingViewController.h"
+#import "DBManager.h"
+
+@interface RVShoppingViewController() {
+    NSMutableArray *_shopItems;
+}
+@end
 
 @implementation RVShoppingViewController
 
@@ -37,47 +43,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view addSubview:self.shoppingControl];
+    [_speakBtn setBackgroundColor:[UIColor whiteColor]];
+    [_calculateBtn setBackgroundColor:[UIColor whiteColor]];
+    [_cameraBtn setBackgroundColor:[UIColor whiteColor]];
+    
+    _shopItems = [[DBManager sharedInstance] getShoptItems:@"dummy"];
 }
 
-- (HMSegmentedControl *)shoppingControl
-{
-    if (!_shoppingControl)
-    {
-        _shoppingControl = [[HMSegmentedControl alloc] initWithSectionImages:
-                            @[[UIImage imageNamed:@"Speaker"],
-                              [UIImage imageNamed:@"Calculator"],
-                              [UIImage imageNamed:@"Receipt"]]
-                                                       sectionSelectedImages:
-                            @[[UIImage imageNamed:@"Speaker"],
-                              [UIImage imageNamed:@"Calculator"],
-                              [UIImage imageNamed:@"Receipt"]]];
-        
-        CGFloat viewWidth = CGRectGetWidth(self.view.frame);
-        CGFloat viewHeight = CGRectGetHeight(self.view.frame);
-        _shoppingControl.frame = CGRectMake(0, 579, viewWidth, viewHeight - 600);
-        _shoppingControl.selectionIndicatorHeight = 4.0f;
-        _shoppingControl.backgroundColor = [UIColor clearColor];
-        _shoppingControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
-        _shoppingControl.selectionStyle = HMSegmentedControlSelectionStyleTextWidthStripe;
-        [_shoppingControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
-    }
-    return _shoppingControl;
+- (IBAction)launchCamera:(id)sender {
+    CameraViewController *picker = [[CameraViewController alloc] init];
+    [self presentViewController:picker animated:YES completion:^{}];
 }
 
-- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
-    NSLog(@"Selected index %ld (via UIControlEventValueChanged)", (long)segmentedControl.selectedSegmentIndex);
-    switch (segmentedControl.selectedSegmentIndex)
-    {
-        case 2:
-        {
-            CameraViewController *picker = [[CameraViewController alloc] init];
-            [self presentViewController:picker animated:YES completion:^{}];
-        }
-        break;
-        default:
-        break;
-    }
+- (IBAction)launchMicToListen:(id)sender {
+    NSLog(@"Speak button (via UIControlEventTouchDown)");
+    //TODO: lauch microphone to listen the user speech
 }
 
+- (IBAction)stopListening:(id)sender {
+    NSLog(@"Speak button (via UIControlEventTouchUpInside)");
+    static int count = 0;
+    //TODO: parse recognized words and add to shopItem list
+    [_shopItems addObject:[[ShopItem alloc] initWithName:[NSString stringWithFormat:@"Item %d", count++] andPrice:0]];
+}
 @end

@@ -10,4 +10,14 @@
 
 @implementation ShopItem
 
+- (instancetype)initWithName:(NSString*)name andPrice:(float)fPrice
+{
+    self = [super init];
+    if (self)
+    {
+        self.name = [NSString stringWithString:name];
+    }
+    return self;
+}
+
 @end

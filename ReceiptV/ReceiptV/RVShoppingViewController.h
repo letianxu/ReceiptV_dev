@@ -27,11 +27,16 @@
 //
 
 @class MKMapView;
-#import "HMSegmentedControl.h"
 
 @interface RVShoppingViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
-@property (nonatomic, strong) HMSegmentedControl *shoppingControl;
+@property (strong, nonatomic) IBOutlet UIButton *speakBtn;
+@property (strong, nonatomic) IBOutlet UIButton *calculateBtn;
+@property (strong, nonatomic) IBOutlet UIButton *cameraBtn;
+
+- (IBAction)launchCamera:(id)sender;
+- (IBAction)launchMicToListen:(id)sender;
+- (IBAction)stopListening:(id)sender;
 
 @end

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B27B6D711ABA022B00B2DC62 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B6D701ABA022B00B2DC62 /* libPods.a */; };
 		B27B6D741ABB058100B2DC62 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B27B6D731ABB058100B2DC62 /* DBManager.m */; };
 		B92478B71AC1096F00D63304 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B92478B61AC1096F00D63304 /* ViewUtils.m */; };
+		B969E1601AD0D4F90006AA0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B969E15F1AD0D4F90006AA0F /* libPods.a */; };
 		B983BFD71ABE639900D715D4 /* ShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B983BFD61ABE639900D715D4 /* ShopItem.m */; };
 		B983BFDF1ABFB0B900D715D4 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B983BFDE1ABFB0B900D715D4 /* CameraViewController.m */; };
 		B995199A1AB9127A00698170 /* frame02-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519971AB9127A00698170 /* frame02-568h@2x.png */; };
@@ -44,11 +44,11 @@
 /* Begin PBXFileReference section */
 		1AFA6BF37D9C78C0773BE999 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		29D5F5C1ECEF70C6CBF670CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		B27B6D701ABA022B00B2DC62 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		B27B6D721ABB058100B2DC62 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		B27B6D731ABB058100B2DC62 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		B92478B51AC1096F00D63304 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 		B92478B61AC1096F00D63304 /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
+		B969E15F1AD0D4F90006AA0F /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		B983BFD51ABE639900D715D4 /* ShopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItem.h; sourceTree = "<group>"; };
 		B983BFD61ABE639900D715D4 /* ShopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItem.m; sourceTree = "<group>"; };
 		B983BFDD1ABFB0B900D715D4 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B27B6D711ABA022B00B2DC62 /* libPods.a in Frameworks */,
+				B969E1601AD0D4F90006AA0F /* libPods.a in Frameworks */,
 				B995199E1AB917A700698170 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,7 +106,7 @@
 		17ACEC5E7534B99D2E33F081 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B27B6D701ABA022B00B2DC62 /* libPods.a */,
+				B969E15F1AD0D4F90006AA0F /* libPods.a */,
 				B995199D1AB917A700698170 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -501,6 +501,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphonesimulator",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/build/Release-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -519,6 +520,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphonesimulator",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/build/Release-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

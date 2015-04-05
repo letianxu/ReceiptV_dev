@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HMSegmentedControl.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-LLSimpleCamera.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0CD879BEF90B83647270EFEC</key>
+		<key>122FECDFE13F5AC2E33223B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E7D492378454DDA02D522FD</key>
+		<key>64F6DF9C29F3E4B90F73C8CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>699031578A92DF49CFC36EC6</key>
+		<key>DC6B04B3447638577CB56055</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA4C1B8581DD21524F5C8105</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DD7EE900713B24658F65E516</key>
+		<key>E5CEE1EC7A5AEF7434A9EE20</key>
 		<dict>
 			<key>primary</key>
 			<true/>

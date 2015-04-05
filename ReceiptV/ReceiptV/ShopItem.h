@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) NSString *name;
 
+- (instancetype)initWithName:(NSString*)name andPrice:(float)fPrice;
+
 @end

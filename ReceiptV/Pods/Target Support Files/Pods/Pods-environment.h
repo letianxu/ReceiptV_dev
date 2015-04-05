@@ -24,12 +24,6 @@
 #define COCOAPODS_VERSION_MINOR_FMDB_standard 5
 #define COCOAPODS_VERSION_PATCH_FMDB_standard 0
 
-// HMSegmentedControl
-#define COCOAPODS_POD_AVAILABLE_HMSegmentedControl
-#define COCOAPODS_VERSION_MAJOR_HMSegmentedControl 1
-#define COCOAPODS_VERSION_MINOR_HMSegmentedControl 5
-#define COCOAPODS_VERSION_PATCH_HMSegmentedControl 0
-
 // LLSimpleCamera
 #define COCOAPODS_POD_AVAILABLE_LLSimpleCamera
 #define COCOAPODS_VERSION_MAJOR_LLSimpleCamera 2
