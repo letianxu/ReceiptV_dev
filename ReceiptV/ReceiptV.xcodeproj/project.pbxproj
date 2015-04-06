@@ -10,6 +10,9 @@
 		B27B6D741ABB058100B2DC62 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B27B6D731ABB058100B2DC62 /* DBManager.m */; };
 		B92478B71AC1096F00D63304 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B92478B61AC1096F00D63304 /* ViewUtils.m */; };
 		B969E1601AD0D4F90006AA0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B969E15F1AD0D4F90006AA0F /* libPods.a */; };
+		B969E1661AD1BF7C0006AA0F /* AcousticModelEnglish.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = B969E1631AD1BF7C0006AA0F /* AcousticModelEnglish.bundle */; };
+		B969E1671AD1BF7C0006AA0F /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B969E1641AD1BF7C0006AA0F /* OpenEars.framework */; };
+		B969E1681AD1BF7C0006AA0F /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B969E1651AD1BF7C0006AA0F /* Slt.framework */; };
 		B983BFD71ABE639900D715D4 /* ShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B983BFD61ABE639900D715D4 /* ShopItem.m */; };
 		B983BFDF1ABFB0B900D715D4 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B983BFDE1ABFB0B900D715D4 /* CameraViewController.m */; };
 		B995199A1AB9127A00698170 /* frame02-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519971AB9127A00698170 /* frame02-568h@2x.png */; };
@@ -49,6 +52,9 @@
 		B92478B51AC1096F00D63304 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 		B92478B61AC1096F00D63304 /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
 		B969E15F1AD0D4F90006AA0F /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		B969E1631AD1BF7C0006AA0F /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AcousticModelEnglish.bundle; path = ../Framework/AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		B969E1641AD1BF7C0006AA0F /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenEars.framework; path = ../Framework/OpenEars.framework; sourceTree = "<group>"; };
+		B969E1651AD1BF7C0006AA0F /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Slt.framework; path = ../Framework/Slt.framework; sourceTree = "<group>"; };
 		B983BFD51ABE639900D715D4 /* ShopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItem.h; sourceTree = "<group>"; };
 		B983BFD61ABE639900D715D4 /* ShopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItem.m; sourceTree = "<group>"; };
 		B983BFDD1ABFB0B900D715D4 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
@@ -88,7 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B969E1661AD1BF7C0006AA0F /* AcousticModelEnglish.bundle in Frameworks */,
 				B969E1601AD0D4F90006AA0F /* libPods.a in Frameworks */,
+				B969E1671AD1BF7C0006AA0F /* OpenEars.framework in Frameworks */,
+				B969E1681AD1BF7C0006AA0F /* Slt.framework in Frameworks */,
 				B995199E1AB917A700698170 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				B969E15F1AD0D4F90006AA0F /* libPods.a */,
+				B969E1631AD1BF7C0006AA0F /* AcousticModelEnglish.bundle */,
+				B969E1641AD1BF7C0006AA0F /* OpenEars.framework */,
+				B969E1651AD1BF7C0006AA0F /* Slt.framework */,
 				B995199D1AB917A700698170 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -494,6 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iOS Development: letian xu (7HUXL5D28Q)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lxu/Projects/c_projects/ReceiptV/Framework,
+				);
 				INFOPLIST_FILE = ReceiptV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -513,6 +529,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iOS Development: letian xu (7HUXL5D28Q)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lxu/Projects/c_projects/ReceiptV/Framework,
+				);
 				INFOPLIST_FILE = ReceiptV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

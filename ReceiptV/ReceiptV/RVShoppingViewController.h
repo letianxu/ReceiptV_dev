@@ -27,8 +27,9 @@
 //
 
 @class MKMapView;
+#import <OpenEars/OEEventsObserver.h>
 
-@interface RVShoppingViewController : UIViewController
+@interface RVShoppingViewController : UIViewController <OEEventsObserverDelegate>
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UIButton *speakBtn;
