@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 skydragon. All rights reserved.
 //
 
+#import <OpenEars/OEPocketsphinxController.h>
 #import "RVAppDelegate.h"
 #import "RVMenuViewController.h"
 #import "RVStoreTableViewController.h"
@@ -45,6 +46,9 @@
     [self.window makeKeyAndVisible];
     [self.window addSubview:self.windowBackground];
     [self.window sendSubviewToBack:self.windowBackground];
+    
+    // request mic permission
+    [[OEPocketsphinxController sharedInstance] requestMicPermission];
     
     return YES;
 

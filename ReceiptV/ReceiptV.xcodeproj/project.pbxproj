@@ -32,6 +32,7 @@
 		B9D3AC951AAE82EF0094A70A /* RVStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC941AAE82EF0094A70A /* RVStoreTableViewController.m */; };
 		B9D3AC9E1AAFE4630094A70A /* ReceiptV_Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D3AC861AAE2B080094A70A /* ReceiptV_Main.storyboard */; };
 		B9D3AC9F1AAFE46B0094A70A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D3AC581AAE22F60094A70A /* LaunchScreen.xib */; };
+		B9E7A4631AD61C0B00EDB86B /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B969E1631AD1BF7C0006AA0F /* AcousticModelEnglish.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -314,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E7A4631AD61C0B00EDB86B /* AcousticModelEnglish.bundle in Resources */,
 				B995199A1AB9127A00698170 /* frame02-568h@2x.png in Resources */,
 				B9D3AC9F1AAFE46B0094A70A /* LaunchScreen.xib in Resources */,
 				B995199C1AB9127A00698170 /* frame02@2x.png in Resources */,

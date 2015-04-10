@@ -37,7 +37,5 @@
 @property (strong, nonatomic) IBOutlet UIButton *cameraBtn;
 
 - (IBAction)launchCamera:(id)sender;
-- (IBAction)launchMicToListen:(id)sender;
-- (IBAction)stopListening:(id)sender;
 
 @end

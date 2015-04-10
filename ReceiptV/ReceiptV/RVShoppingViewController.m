@@ -38,6 +38,7 @@
 
 @interface RVShoppingViewController() {
     NSMutableArray *_shopItems;
+    OEPocketsphinxController *_OESingleton;
 }
 
 @property (nonatomic, strong) OEEventsObserver *openEarsEventsObserver;
@@ -60,17 +61,22 @@
     [_calculateBtn setBackgroundColor:[UIColor whiteColor]];
     [_cameraBtn setBackgroundColor:[UIColor whiteColor]];
     
+    [self.speakBtn addTarget:self action:@selector(launchMicToListen) forControlEvents:UIControlEventTouchDown];
+    [self.speakBtn addTarget:self action:@selector(stopListening) forControlEvents:UIControlEventTouchUpInside];
+    
     _shopItems = [[DBManager sharedInstance] getShoptItems:@"dummy"];
+    
+    _OESingleton =[OEPocketsphinxController sharedInstance];
     
     // speech recognition setup
     self.openEarsEventsObserver = [[OEEventsObserver alloc] init];
     self.openEarsEventsObserver.delegate = self;
     
     //[OELogging startOpenEarsLogging]; // Uncomment me for OELogging, which is verbose logging about internal OpenEars operations such as audio settings. If you have issues, show this logging in the forums.
-    //[OEPocketsphinxController sharedInstance].verbosePocketSphinx = TRUE; // Uncomment this for much more verbose speech recognition engine output. If you have issues, show this logging in the forums.
+    //[_OESingleton.verbosePocketSphinx = TRUE; // Uncomment this for much more verbose speech recognition engine output. If you have issues, show this logging in the forums.
     [self.openEarsEventsObserver setDelegate:self]; // Make this class the delegate of OpenEarsObserver so we can get all of the messages about what OpenEars is doing.
     
-    [[OEPocketsphinxController sharedInstance] setActive:TRUE error:nil]; // Call this before setting any OEPocketsphinxController characteristics
+    [_OESingleton setActive:TRUE error:nil]; // Call this before setting any OEPocketsphinxController characteristics
     
     NSArray *wordsArray = @[@"BACKWARD",
                                     @"CHANGE",
@@ -101,21 +107,31 @@
     [self presentViewController:picker animated:YES completion:^{}];
 }
 
-- (IBAction)launchMicToListen:(id)sender {
+- (void)launchMicToListen
+{
     NSLog(@"Speak button (via UIControlEventTouchDown)");
+    if (!_OESingleton.micPermissionIsGranted)
+        return;
     
-    if(![OEPocketsphinxController sharedInstance].isListening) {
-        [[OEPocketsphinxController sharedInstance] startListeningWithLanguageModelAtPath:self.pathToDynamicallyGeneratedLanguageModel dictionaryAtPath:self.pathToDynamicallyGeneratedDictionary acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:FALSE];
+    if(!_OESingleton.isListening) {
+        NSLog(@"Start the engine and recognition loop...");
+        [_OESingleton startListeningWithLanguageModelAtPath:self.pathToDynamicallyGeneratedLanguageModel dictionaryAtPath:self.pathToDynamicallyGeneratedDictionary acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:FALSE];
+    }
+    
+    if (_OESingleton.isSuspended)
+    {
+        NSLog(@"Resume recognition loop...");
+        [_OESingleton resumeRecognition];
     }
     
 }
 
-- (IBAction)stopListening:(id)sender {
+- (void)stopListening
+{
     NSLog(@"Speak button (via UIControlEventTouchUpInside)");
-    NSError *error = nil;
-    if([OEPocketsphinxController sharedInstance].isListening) {
-        error = [[OEPocketsphinxController sharedInstance] stopListening]; // React to it by telling Pocketsphinx to stop listening (if it is listening) since it will need to restart its loop after an interruption.
-        if(error) NSLog(@"Error while stopping listening when releasing button: %@", error);
+    if(_OESingleton.isListening && !_OESingleton.isSuspended) {
+        NSLog(@"Keep the engine going but stop listening to speech...");
+        [_OESingleton suspendRecognition];
     }
     static int count = 0;
     //TODO: parse recognized words and add to shopItem list
@@ -135,8 +151,8 @@
 - (void) audioSessionInterruptionDidBegin {
     NSLog(@"Local callback:  AudioSession interruption began.");
     NSError *error = nil;
-    if([OEPocketsphinxController sharedInstance].isListening) {
-        error = [[OEPocketsphinxController sharedInstance] stopListening]; // React to it by telling Pocketsphinx to stop listening (if it is listening) since it will need to restart its loop after an interruption.
+    if(_OESingleton.isListening) {
+        error = [_OESingleton stopListening]; // React to it by telling Pocketsphinx to stop listening (if it is listening) since it will need to restart its loop after an interruption.
         if(error) NSLog(@"Error while stopping listening in audioSessionInterruptionDidBegin: %@", error);
     }
 }
@@ -145,9 +161,15 @@
 - (void) audioSessionInterruptionDidEnd {
     NSLog(@"Local callback:  AudioSession interruption ended.");
     // We're restarting the previously-stopped listening loop.
-    if(![OEPocketsphinxController sharedInstance].isListening){
-        [[OEPocketsphinxController sharedInstance] startListeningWithLanguageModelAtPath:self.pathToDynamicallyGeneratedLanguageModel dictionaryAtPath:self.pathToDynamicallyGeneratedDictionary acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:FALSE]; // Start speech recognition if we aren't currently listening.
+    if(!_OESingleton.isListening){
+        [_OESingleton startListeningWithLanguageModelAtPath:self.pathToDynamicallyGeneratedLanguageModel dictionaryAtPath:self.pathToDynamicallyGeneratedDictionary acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:FALSE]; // Start speech recognition if we aren't currently listening.
     }
+}
+
+// An optional delegate method of OEEventsObserver which informs that Pocketsphinx has exited its recognition loop, most
+// likely in response to the OEPocketsphinxController being told to stop listening via the stopListening method.
+- (void) pocketsphinxDidStopListening {
+    NSLog(@"Local callback: Pocketsphinx has stopped listening.");
 }
 
 
