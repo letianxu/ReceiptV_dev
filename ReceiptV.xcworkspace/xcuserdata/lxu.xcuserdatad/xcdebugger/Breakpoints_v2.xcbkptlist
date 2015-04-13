@@ -6,32 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Libraries/HMSegmentedControl/HMSegmentedControl.m"
-            timestampString = "449803582.608259"
+            filePath = "ReceiptV/ReceiptV/RVShoppingViewController.m"
+            timestampString = "450583237.719673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "725"
-            endingLineNumber = "725"
-            landmarkName = "-touchesEnded:withEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Libraries/HMSegmentedControl/HMSegmentedControl.m"
-            timestampString = "449803596.128408"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "718"
-            endingLineNumber = "718"
-            landmarkName = "-touchesBegan:withEvent:"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "-updateAudioInputLevel"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

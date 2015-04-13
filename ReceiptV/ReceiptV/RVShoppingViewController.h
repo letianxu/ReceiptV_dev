@@ -35,6 +35,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *speakBtn;
 @property (strong, nonatomic) IBOutlet UIButton *calculateBtn;
 @property (strong, nonatomic) IBOutlet UIButton *cameraBtn;
+@property (strong, nonatomic) IBOutlet UIImageView *audioMeterView;
 
 - (IBAction)launchCamera:(id)sender;
 
