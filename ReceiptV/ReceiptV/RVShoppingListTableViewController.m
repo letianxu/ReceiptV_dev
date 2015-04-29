@@ -42,7 +42,7 @@ NSString * const RVShoppingListCellReuseIdentifier = @"My Shopping List";
 
 - (void)loadView
 {
-    _shopItems = [[DBManager sharedInstance] getShoptItems:@"dummy"];
+    _shopItems = [[DBManager sharedInstance] getShoptItems:@"dummy_ShopName"];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
 }
 

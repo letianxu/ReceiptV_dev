@@ -36,10 +36,11 @@
 #import "RVShoppingViewController.h"
 #import "DBManager.h"
 #import "ViewUtils.h"
+#import "SpeechResult.h"
 
 @interface RVShoppingViewController() {
-    NSMutableArray *_shopItems;
     OEPocketsphinxController *_OESingleton;
+    DBManager *_dbManager;
 }
 
 @property (nonatomic, strong) OEEventsObserver *openEarsEventsObserver;
@@ -70,9 +71,13 @@
     
     _audioMeterView.hidden = YES;
     
-    _shopItems = [[DBManager sharedInstance] getShoptItems:@"dummy"];
-    
     _OESingleton =[OEPocketsphinxController sharedInstance];
+    _dbManager = [DBManager sharedInstance];
+    
+    if (![_dbManager isTableExisting:@"dummy_ShopName"])
+        [_dbManager createTableWithName:@"dummy_ShopName" primaryKey:nil shopItemClass:[ShopItem class]];
+    else
+        NSLog(@"Table %@ already exists", @"dummy_ShopName");
     
     // speech recognition setup
     _openEarsEventsObserver = [[OEEventsObserver alloc] init];
@@ -148,15 +153,11 @@
         _audioInputLevelTimer = nil;
     }
     _audioMeterView.hidden = YES;
-    
-    static int count = 0;
-    //TODO: parse recognized words and add to shopItem list
-    [_shopItems addObject:[[ShopItem alloc] initWithName:[NSString stringWithFormat:@"Item %d", count++] andPrice:0]];
 }
 
 - (void)updateAudioInputLevel
 {
-    NSLog(@"Audio input level:%f", [_OESingleton pocketsphinxInputLevel]);
+    //NSLog(@"Audio input level:%f", [_OESingleton pocketsphinxInputLevel]);
     float audioInputLevel = [_OESingleton pocketsphinxInputLevel];
     UIImage *image;
     if (audioInputLevel <= -115.0) {
@@ -202,6 +203,15 @@
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID
 {
     NSLog(@"Local callback: The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
+    SpeechResult *result = [[SpeechResult alloc] initWithResult:hypothesis];
+    ShopItem *item = [result parseOneShoptItem];
+    
+    [_dbManager addShopItemToTable:@"dummy_ShopName" item:item];
+}
+
+// Pocketsphinx has an n-best hypothesis dictionary.
+- (void) pocketsphinxDidReceiveNBestHypothesisArray:(NSArray *)hypothesisArray {
+    NSLog(@"Local callback:  hypothesisArray is %@",hypothesisArray);
 }
 
 // An optional delegate method of OEEventsObserver which informs that there was an interruption to the audio session (e.g. an incoming phone call).

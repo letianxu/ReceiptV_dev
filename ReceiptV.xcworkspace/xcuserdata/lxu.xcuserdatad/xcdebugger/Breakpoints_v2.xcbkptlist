@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ReceiptV/ReceiptV/RVShoppingViewController.m"
-            timestampString = "450583237.719673"
+            filePath = "ReceiptV/ReceiptV/DBManager.m"
+            timestampString = "451969150.660106"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "-updateAudioInputLevel"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-addShopItemToTable:item:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReceiptV/ReceiptV/DBManager.m"
+            timestampString = "451969187.040502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "-isTableExisting:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

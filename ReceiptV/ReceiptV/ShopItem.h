@@ -10,6 +10,7 @@
 
 @interface ShopItem : NSObject
 
+@property (assign, nonatomic) float fPrice;
 @property (strong, nonatomic) NSString *name;
 
 - (instancetype)initWithName:(NSString*)name andPrice:(float)fPrice;

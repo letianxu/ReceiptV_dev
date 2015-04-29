@@ -16,6 +16,8 @@
 
 - (BOOL) createTableWithName:(NSString*)tableName primaryKey:(NSString*)key shopItemClass:(Class)shopItemClass;
 
+- (BOOL) isTableExisting:(NSString*)tableName;
+
 - (BOOL) addShopItemToTable:(NSString*)tableName item:(ShopItem *)item;
 
 - (BOOL) deleteShoptItemFromTable:(NSString*)tableName item:(ShopItem*)item;

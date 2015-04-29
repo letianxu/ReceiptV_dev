@@ -33,6 +33,7 @@
 		B995199B1AB9127A00698170 /* frame02.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519981AB9127A00698170 /* frame02.png */; };
 		B995199C1AB9127A00698170 /* frame02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99519991AB9127A00698170 /* frame02@2x.png */; };
 		B995199E1AB917A700698170 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995199D1AB917A700698170 /* MapKit.framework */; };
+		B996EFC41AE2E83D001AA874 /* SpeechResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B996EFC31AE2E83D001AA874 /* SpeechResult.m */; };
 		B9BCDA831AB525F00022231D /* RVShoppingListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */; };
 		B9BCDA8E1AB67B550022231D /* RVShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BCDA8D1AB67B550022231D /* RVShoppingViewController.m */; };
 		B9D3AC491AAE22F60094A70A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D3AC481AAE22F60094A70A /* main.m */; };
@@ -92,6 +93,8 @@
 		B99519981AB9127A00698170 /* frame02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame02.png; path = Images.xcassets/frame02.png; sourceTree = "<group>"; };
 		B99519991AB9127A00698170 /* frame02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "frame02@2x.png"; path = "Images.xcassets/frame02@2x.png"; sourceTree = "<group>"; };
 		B995199D1AB917A700698170 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B996EFC21AE2E83D001AA874 /* SpeechResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechResult.h; sourceTree = "<group>"; };
+		B996EFC31AE2E83D001AA874 /* SpeechResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechResult.m; sourceTree = "<group>"; };
 		B9BCDA811AB525F00022231D /* RVShoppingListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVShoppingListTableViewController.h; sourceTree = "<group>"; };
 		B9BCDA821AB525F00022231D /* RVShoppingListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVShoppingListTableViewController.m; sourceTree = "<group>"; };
 		B9BCDA8C1AB67B550022231D /* RVShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVShoppingViewController.h; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				B9D3AC941AAE82EF0094A70A /* RVStoreTableViewController.m */,
 				B983BFD51ABE639900D715D4 /* ShopItem.h */,
 				B983BFD61ABE639900D715D4 /* ShopItem.m */,
+				B996EFC21AE2E83D001AA874 /* SpeechResult.h */,
+				B996EFC31AE2E83D001AA874 /* SpeechResult.m */,
 				B983BFDB1ABF52E200D715D4 /* Resource */,
 				B9D3AC461AAE22F60094A70A /* Supporting Files */,
 				B983BFDC1ABF530C00D715D4 /* WYSIWYG */,
@@ -428,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B996EFC41AE2E83D001AA874 /* SpeechResult.m in Sources */,
 				B9D3AC8C1AAE398E0094A70A /* RVMenuViewController.m in Sources */,
 				B9BCDA831AB525F00022231D /* RVShoppingListTableViewController.m in Sources */,
 				B9D3AC4C1AAE22F60094A70A /* RVAppDelegate.m in Sources */,

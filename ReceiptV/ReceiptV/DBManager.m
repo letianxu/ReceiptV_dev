@@ -45,6 +45,7 @@
         }
         
         _shopItems = [NSMutableArray arrayWithCapacity:0];
+        _columnNames = [NSMutableArray arrayWithCapacity:0];
     }
     return self;
 }
@@ -55,7 +56,6 @@
     unsigned int outCount, i;
     objc_property_t *properties = class_copyPropertyList(shopItemClass, &outCount);
     if (outCount == 0) return NO;
-    _columnNames = [NSMutableArray arrayWithCapacity:outCount];
     for (i = 0; i < outCount; i++) {
         if (i > 0)
         {
@@ -68,7 +68,8 @@
         {
             [createTableString appendFormat:@"%s %s", propName, "real"];
         }
-        else if (propAttr[1] == 'c' || propAttr[2] == 'c')
+        else if ((propAttr[1] == 'c' || propAttr[2] == 'c') ||
+                 strstr(propAttr, "NSString"))
         {
             [createTableString appendFormat:@"%s %s", propName, "text"];
         }
@@ -84,7 +85,26 @@
 
     return [_dataBase executeUpdate:createTableString];
 }
+//BUG for reentering
+- (BOOL) isTableExisting:(NSString*)tableName
+{
+    NSString *checkTableExistingStr = [NSString stringWithFormat:@"pragma table_info('%@')", tableName];
+    FMResultSet *rs = [_dataBase executeQuery:checkTableExistingStr];
+    if (rs)
+    {
+        while ([rs next])
+        {
+            // add each column name to array for dynamically composing sql string
+            NSString *columnName = [rs stringForColumn:@"name"];
+            [_columnNames addObject:columnName];
+        }
+        [rs close];
+        return YES;
+    }
+    return NO;
+}
 
+//BUG order of column name and class variable name
 - (BOOL) addShopItemToTable:(NSString*)tableName item:(ShopItem *)item
 {
     NSMutableString* addItemString = [[NSMutableString alloc] initWithFormat:@"insert into %@ (", tableName];
@@ -96,6 +116,7 @@
             [addItemString appendString:@", "];
         }
         [addItemString appendFormat:@"%@", name];
+        i++;
     }
     [addItemString appendString:@") values ("];
     

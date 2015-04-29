@@ -15,7 +15,8 @@
     self = [super init];
     if (self)
     {
-        self.name = [NSString stringWithString:name];
+        _name = [NSString stringWithString:name];
+        _fPrice = fPrice;
     }
     return self;
 }
